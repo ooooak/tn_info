@@ -68,7 +68,7 @@ Helper.addHead = function(valueType){
 		sTh += 'Rating'
 	}
 
-	$('.display-result-head').html(`<th>Player</th> <th> ${sTh}</th>`);
+	$('.display-result-head').html(`<th>Character</th> <th> ${sTh}</th>`);
 }
 
 Helper.canContinue = function(_start, _end, _rank){
