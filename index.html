@@ -1,0 +1,72 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/spectre-0.5.0/spectre.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="content">
+		<div class="filters">
+			<div class="container">
+			  	<div class="columns">
+			    	<div class="column col-6 col-sm-12">
+				    	<div id="filter-action" class="form-group">
+							<label class="form-label">Action</label>
+							<label class="form-radio">
+								<input type="radio" name="action" data-action="most_used" checked>
+								<i class="form-icon"></i> Most Used
+							</label>
+						  	<label class="form-radio">
+						    	<input type="radio" name="action" data-action="top-char">
+						    	<i class="form-icon"></i> Top Characters
+						  	</label>
+						</div>
+			    	</div><!-- column -->
+			    	
+			    	<div class="column col-6 col-sm-12">
+				    	<div class="form-horizontal">
+						  <div class="form-group">
+						    <div class="col-4">
+						      <label class="form-label" for="input-example-1">Rank (optional)</label>
+						    </div>
+						    <div class="col-4">
+						      <input class="form-input" type="number" value="1"min="1" max="1000" id="filter-rank-start" placeholder="From" >
+						    </div>
+						    &nbsp;
+						    <div class="col-4">
+						      <input class="form-input" type="number" value="1000" min="1" max="1000" id="filter-rank-end" placeholder="To">
+						    </div>
+						  </div>
+						  <p class="form-input-hint">if you want to see top 50 ranked players info add 1 and 50 </p>
+						</div>
+					</div><!-- column -->
+				</div><!-- columns -->
+			</div><!-- container -->
+
+			<button class="btn btn-lg" id="generate-results">Generate Result</button>
+			<br />
+			<br />
+
+		</div><!-- filters -->
+		<hr>
+		<div class="result-area">
+			<table class="table table-striped">
+          <thead class="display-result-head">
+          </thead>
+          <tbody class="display-result">
+          </tbody>
+        </table>
+		</div>
+
+	</div><!-- content -->
+	
+
+
+	<div class="results"></div>
+	<script src="js/data.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/app.js"></script>
+</body>	
+</html>

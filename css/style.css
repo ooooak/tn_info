@@ -1,0 +1,14 @@
+body{
+    padding: 65px 0px 0px 0px;
+    background-color: #eaeaea;
+}
+.content{
+	background-color: white;
+	padding: 20px;
+	/*min-width: 100%;*/
+	max-width: 960px;
+	margin: auto;
+}
+.c-name{
+	width: 200px;
+}
